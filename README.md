@@ -2,6 +2,6 @@
 
 [sitemap] (https://www.gloomaps.com/NZ7dHfwNQq)
 
-wireframe
+[wireframe] ( ... )
 
-mockup
+[mockup] ( ... )
