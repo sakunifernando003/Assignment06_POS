@@ -3,9 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <title>Store</title>
+    <link rel="stylesheet" href="lib/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .custom-btn-new {
+            background-color: yellowgreen;
+            color: black;
+        }
+
+        .custom-btn-get-all {
+            background-color: gold;
+            color: black;
+        }
+        .button-spacing {
+            margin-right: 20px; /* Adjust spacing as needed */
+            margin-left: 300px;
+        }
+        .button-spacing2 {
+            margin-right: 30px; /* Adjust spacing as needed */
+
+        }
+        .button-spacing3{
+            margin-left: 600px;
+
+        }
+
+        .button-spacing5{
+            margin-right: 300px;
+        }
+
+        /*.button-bar{*/
+        /*    margin-right: 20px;*/
+        /*}*/
+        .content-spacing{
+            margin-top: 20px;
+        }
+        .content-spacing1{
+            margin-top: 30px;
+
+        }
+        .register-buttons{
+            margin-left: 200px;
+        }
+
+    </style>
 </head>
 <body>
+<header>
+    <nav class="navbar bg-body-tertiary row-gap-3">
+        <div class="container-fluid d-flex align-items-center">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assest/groceries.png" alt="Logo" width="30" height="25" class="d-inline-block align-text-top me-2">
+                Shopify POS Systems
+            </a>
 
 
+            <ul class="nav justify-content-center mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orders</a>
+                </li>
+
+            </ul>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assest/img.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top me-2">
+            </a>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assest/img_1.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top me-2">
+            </a>
+        </div>
+    </nav>
+</header>
+<section>
+    <nav class="navbar bg-body-tertiary row-gap-3 content-spacing">
+
+        <div class="fw-semibold text-nowrap bg-body-secondary border"  style="width: 10rem;">
+           Item Manage
+        </div>
+
+        <form class="d-flex" role="search">
+            <input class="form-control me-2 " style="width: 300px;" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-light btn-sm custom-btn-new button-spacing" >+ New</button>
+            <button class="btn btn-outline-light btn-sm custom-btn-get-all button-spacing2">Get All</button>
+        </form>
+    </nav>
+
+</section>
+
+<!--<div class="text-nowrap bg-body-secondary border mx-auto p-2" style="width: 300px;">-->
+<!--    Search here-->
+<!--</div>-->
+<section>
+    <nav class="navbar bg-body-tertiary row-gap-3 content-spacing">
+        <table class="table table-striped-columns content-spacing1">
+            <thead>
+            <tr>
+                <th scope="col ">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Supplier</th>
+                <th scope="col">Qty</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">001</th>
+                <td>carpet</td>
+                <td>1500.00</td>
+                <td>Phonix</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <th scope="row">002</th>
+                <td>wine Glass</td>
+                <td>600.00</td>
+                <td>Cristel</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <th scope="row">003</th>
+                <td>posylen vas</td>
+                <td>2400.00</td>
+                <td>Chuing</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th scope="row">004</th>
+                <td>Lampshed</td>
+                <td>3000.00</td>
+                <td>Xin</td>
+                <td>40</td>
+            </tr>
+            </tbody>
+        </table>
+    </nav>
+    <div class="d-flex justify-content-around button-bar">
+        <button type="button" class="btn btn-success button-spacing3">Save</button>
+        <button type="button" class="btn btn-warning button-spacing4">Update</button>
+        <button type="button" class="btn btn-danger button-spacing5">Delete</button>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-success text-white">Register Customer</div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Item Code :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Item Name :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Price :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Supplier :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Quantity :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="register-buttons">
+                        <button type="button" class="btn btn-outline-primary">Submit</button>
+                        <button type="button" class="btn btn-outline-danger">Reset</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"></script>
 </body>
 </html>
